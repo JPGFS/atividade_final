@@ -1,0 +1,93 @@
+:root{
+    --cor_principal: #04AA6D;
+    --cor_white: rgb(255, 255, 255);
+    --cor_black: rgb(68, 68, 68);
+    --cor_cinza: rgb(245, 245, 245);
+    --cor_black_fundo: rgb(39, 39, 39);
+}
+
+.tema_claro{
+    background-color: var(--cor_white);
+}
+
+.tema_escuro{
+    background-color: var(--cor_black_fundo);
+}
+
+.card1 {
+    background-color: var(--cor_cinza);
+}
+.card1_dark{
+    background-color: var(--cor_black);
+    color: var(--cor_white);
+}
+
+.titulo{
+    color: var(--cor_black);
+}
+.titulo_dark{
+    color: var(--cor_white);
+}
+
+.titulo_principal{
+    text-align: center;
+    background-color: var(--cor_principal);
+    color: white;
+    padding: 25px;
+}
+
+.conteudo{
+    text-align: justify;
+    font-size: 15px;
+    margin: 15px;
+}
+
+.card-title{
+    text-align: center;
+    padding: 10px;
+}
+
+.card-subtitle{
+    text-align: justify;
+    margin: 10px;
+}
+
+#card2, #card3, #card4, #card5{
+    width: 450px;
+    height: 350px;
+}
+
+i{
+    position: absolute;
+    left: 90%;
+    top: 15px;
+    font-size: 40px;
+    margin: 0;
+    cursor: pointer;
+    color: white;
+}
+
+body.tema_escuro .card {
+    filter: brightness(.8) contrast(1.2);
+}
+
+@media (tema: dark) {
+    .card {
+        filter: brightness(.8) contrast(1.2);
+    }
+}
+
+body.tema_escuro #accordion {
+    background: var(--cor_black);
+    color: var(--cor_white);
+}
+
+body.tema_escuro #accordion h3 {
+    background: var(--cor_black);
+    color: var(--cor_white);
+}
+
+body.tema_escuro .acordeao {
+    background: var(--cor_black);
+    color: var(--cor_white);
+}
